@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instalasi Aplikasi LQB Maintenance - Pertamina PHE OSES</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#002855">
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    body { background: #0f172a; color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 16px; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 24px; max-width: 480px; width: 100%; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
+    .stripe { display: flex; height: 6px; width: 100%; }
+    .stripe-red { flex: 1; background: #ED1C24; }
+    .stripe-blue { flex: 1; background: #005BAC; }
+    .stripe-orange { flex: 1; background: #FF6F00; }
+    .header { padding: 24px; text-align: center; background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%); border-bottom: 1px solid #334155; }
+    .logo-box { background: white; border-radius: 16px; padding: 10px 16px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    .logo-img { height: 36px; width: auto; }
+    h1 { font-size: 20px; font-weight: 900; letter-spacing: 0.5px; color: #ffffff; }
+    .sub { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+    .body { padding: 24px; }
+    .btn-install { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; background: #ED1C24; color: white; border: none; padding: 16px; border-radius: 16px; font-size: 15px; font-weight: 800; cursor: pointer; text-decoration: none; box-shadow: 0 8px 20px rgba(237,28,36,0.35); transition: all 0.2s; }
+    .btn-install:active { transform: scale(0.98); }
+    .steps { background: #0f172a; border: 1px solid #334155; border-radius: 16px; padding: 16px; margin-top: 20px; }
+    .steps-title { font-size: 12px; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+    .step-item { display: flex; gap: 12px; margin-bottom: 12px; font-size: 12px; line-height: 1.5; color: #cbd5e1; }
+    .step-item:last-child { margin-bottom: 0; }
+    .step-num { background: #005BAC; color: white; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 11px; shrink: 0; flex-shrink: 0; }
+    .btn-wa { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; background: #10b981; color: white; border: none; padding: 12px; border-radius: 14px; font-size: 13px; font-weight: 700; cursor: pointer; text-decoration: none; margin-top: 14px; }
+    .btn-app { display: flex; align-items: center; justify-content: center; width: 100%; background: transparent; color: #94a3b8; border: 1px solid #475569; padding: 12px; border-radius: 14px; font-size: 12px; font-weight: 600; text-decoration: none; margin-top: 10px; text-align: center; }
+    .footer { padding: 16px; text-align: center; font-size: 11px; color: #64748b; border-top: 1px solid #334155; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="stripe">
+      <div class="stripe-red"></div>
+      <div class="stripe-blue"></div>
+      <div class="stripe-orange"></div>
+    </div>
+
+    <div class="header">
+      <div class="logo-box">
+        <img src="/pertamina-phe-oses-logo.svg" alt="Pertamina PHE OSES" class="logo-img">
+      </div>
+      <h1>LQB MAINTENANCE</h1>
+      <p class="sub">Portal Resmi Instalasi Aplikasi Mobile Android (Offshore)</p>
+    </div>
+
+    <div class="body">
+      <!-- Direct 1-Click Install Button -->
+      <button id="installBtn" class="btn-install">
+        <span>📲 Pasang Aplikasi ke HP Sekarang</span>
+      </button>
+
+      <!-- Easy Steps -->
+      <div class="steps">
+        <div class="steps-title">
+          <span>⚡ Cara Pasang Cepat di Android (Chrome):</span>
+        </div>
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div>Buka link ini menggunakan browser <strong>Google Chrome</strong> di ponsel Android Anda.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div>Ketuk menu <strong>titik tiga (⋮)</strong> di pojok kanan atas browser Google Chrome.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div>Pilih <strong>"Install Aplikasi"</strong> atau <strong>"Tambahkan ke Layar Utama"</strong>. Aplikasi langsung terpasang di HP Anda!</div>
+        </div>
+      </div>
+
+      <!-- Kirim ke WhatsApp -->
+      <a id="shareWaBtn" href="#" class="btn-wa">
+        <span>💬 Bagikan Link Ini ke WhatsApp</span>
+      </a>
+
+      <!-- Buka Aplikasi Web -->
+      <a href="/" class="btn-app">
+        <span>Buka Aplikasi Laporan Langsung di Browser &rarr;</span>
+      </a>
+    </div>
+
+    <div class="footer">
+      Pertamina PHE OSES • Cinta Charlie &amp; Cinta Papa
+    </div>
+  </div>
+
+  <script>
+    var deferredPrompt;
+    var installBtn = document.getElementById('installBtn');
+
+    window.addEventListener('beforeinstallprompt', function(e) {
+      e.preventDefault();
+      deferredPrompt = e;
+      installBtn.style.display = 'flex';
+    });
+
+    installBtn.addEventListener('click', function() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(function(choiceResult) {
+          deferredPrompt = null;
+          if (choiceResult.outcome === 'accepted') {
+            window.location.href = '/';
+          }
+        });
+      } else {
+        alert('Untuk memasang di HP:\n1. Ketuk menu titik tiga (⋮) di kanan atas Chrome\n2. Pilih "Install Aplikasi" atau "Tambahkan ke Layar Utama"');
+      }
+    });
+
+    // Share link to WA
+    var currentUrl = window.location.origin + '/apk';
+    var waText = '*LINK APLIKASI LQB MAINTENANCE (PERTAMINA PHE OSES)*\n\n' +
+      'Silakan buka link ini di Google Chrome HP untuk memasang aplikasi:\n' +
+      currentUrl + '\n\n' +
+      'Langkah pasang: Ketuk titik tiga (⋮) di kanan atas Chrome -> Pilih "Install Aplikasi".';
+    
+    document.getElementById('shareWaBtn').href = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(waText);
+  </script>
+
+</body>
+</html>

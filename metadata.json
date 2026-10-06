@@ -1,0 +1,6 @@
+{
+  "name": "Panduan & Sistem Reading STP (Google Sheets & AppSheet Offline)",
+  "description": "Panduan lengkap implementasi sistem laporan harian Sewage Treatment Plant (STP) dengan Google Sheets, Google Forms, dan AppSheet Offline Mode beserta formula ringkasan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
